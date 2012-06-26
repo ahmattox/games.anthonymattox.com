@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+div.game a.playbutton {
+  background: url(images/misc/play-button.gif) no-repeat;
+  background-color: white;
+}
+
+#plong .plongobstacle {
+  background-color: #818D8F;
+}
+
+#pulsus #pulsusinfo {
+  background: url(images/pulsus/ipads.gif) no-repeat;
+  height: 291px;
+  width: 393px;
+}
+
+#pulsus #pulsusinfo img {
+  display: none !important;
+}

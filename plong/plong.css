@@ -1,0 +1,117 @@
+html, body	{
+  height:100%;
+  font-family: Verdana, sans-serif;
+}
+
+body {
+  margin:0;
+  padding:0;
+  overflow:auto;
+  text-align:center; 
+  background-color: #ffffff;
+}
+
+object:focus {
+  outline:none;
+}
+
+#flashContent {
+  display:none;
+}
+
+div {
+  position: relative;
+}
+
+
+
+#head {
+  height: 50px;
+}
+
+
+#foot {
+  width: 740px;
+  margin: 40px auto 0;
+  padding: 0 0 50px;
+  height: 28px;
+}
+
+#foot #moregames {
+  float: right;
+  font-size: 12px;
+  color: white;
+  background: #7C8D8E;
+  border-radius: 4px;
+  padding: 4px 8px;
+  text-decoration: none;
+  margin: 2px 0 0;
+}
+
+#foot #moregames:hover {
+  background: #D45533;
+}
+
+#foot #keys {
+  float: left;
+  font-size: 10px;
+}
+
+#foot #keys .player {
+  float: left;
+  width: 52px;
+  padding: 0 25px 0 0;
+  height: 28px;
+}
+
+
+#foot #keys .key {
+  width: 16px;
+  height: 13px;
+  background: #7C8D8E;
+  border-radius: 2px;
+  color: white;
+  position: absolute;
+  top: 15px;
+  left: 0px;
+}
+
+#foot #keys .key.up {
+  top: 0px;
+  left: 18px;
+}
+
+#foot #keys .key.down {
+  left: 18px;
+}
+
+#foot #keys .key.right {
+  left: 36px;
+}
+
+#foot #keys #p1 .key {
+ background-color: #00A4B9;
+}
+
+#foot #keys #p2 .key {
+  background-color: #D45533;
+  padding-top: 1px;
+  height: 12px;
+}
+
+#foot #keys #p1 .key.up{
+  left: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

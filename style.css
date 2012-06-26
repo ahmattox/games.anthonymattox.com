@@ -1,0 +1,473 @@
+/*
+ *  Created:
+ *  Last Edited:
+ *
+ */
+ 
+
+/* ---- GLOBAL STYLES ---- */
+
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body{
+	font-size: 12px;
+	font-family: Helvetica, Arial, sans-serif;
+	height: 100%;
+	background: #2B2B2B;
+	color: white;
+}
+
+a{
+	color: white;
+	text-decoration: underline;
+	outline: none;
+}
+
+a:hover{
+}
+
+a img{
+	border: none;
+}
+
+p{
+	padding: 0 0 10px;
+}
+
+div{
+	position: relative;
+}
+
+
+ul{
+	list-style: none;
+	position: relative;
+}
+
+ul li{
+	position: relative;
+}
+
+
+h1{
+	padding: 0 0 15px;
+	text-rendering: optimizeLegibility;
+}
+
+h2{
+	padding: 0 0 10px;
+	text-rendering: optimizeLegibility;
+}
+
+h3{
+}
+
+input[type="submit"]{
+	cursor:pointer;
+}
+
+input[type=text],
+textarea{
+	border:solid 1px #000000;
+	font-family:Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	padding: 4px 4px 2px;
+}
+
+.clear{
+	clear:both;
+	height:0px;
+	line-height:0px;
+	font-size:0px;
+}
+
+.hidden{
+	display:none;
+}
+
+.imgreplace{
+	display:block;
+	text-indent:-500px;
+	overflow:hidden;
+	font-size:0px;
+	background-repeat:no-repeat;
+}
+
+.hr {
+  height: 3px;
+  width: 100%;
+  margin-top: -1px;
+  margin-bottom: -2px;
+  background: url(/images/misc/hr.png) repeat-x;
+  border: none;
+  position: relative;
+  z-index: 30;
+}
+
+#head a:hover,
+#foot a:hover {
+  color: #78F1FE;
+}
+
+
+
+/* ---- GLOBAL LAYOUT ---- */
+
+#container{
+  min-width: 800px;
+}
+
+#head{
+	width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+#head #headinner {
+  padding: 15px 35px 14px;
+	background: #2B2B2B;
+	opacity: .9;
+	height: 14px;
+}
+
+#body{
+  padding-top: 43px;
+}
+
+#foot{
+	padding: 80px 35px 640px;
+}
+
+
+/* ----  HEAD */
+
+#head {
+}
+
+#head h1,
+#head ul li,
+#head a {
+  font-size: 12px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+#head .left{
+  float: left;
+}
+
+#head .right{
+  float: right;
+}
+
+#head ul {
+  padding: 0;
+  margin: 0;
+}
+
+#head ul li {
+  float: left;
+  padding: 0 10px;
+}
+
+#head h1,
+#head h2 {
+  padding: 0 20px 0 0;
+}
+
+#head li a {
+  padding: 12px 2px;
+}
+
+#head li a:hover {
+  border-top: solid 2px #808080;
+}
+
+
+/* ---- FOOT */
+
+#foot p {
+  width: 170px;
+}
+
+
+
+
+
+
+/* ----  BODY */
+
+
+.game {
+  display: block;
+  width: 100%;
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.game .playbutton {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 128px;
+  height: 48px;
+  background: url(images/misc/play-button.png) no-repeat;
+  overflow: hidden;
+  text-indent: -300px;
+  z-index: 90;
+}
+
+.game .playbutton:hover {
+  background-position: 0 -48px;
+}
+
+
+
+
+div#orbit {
+  background: black;
+  height: 430px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#orbit #orbitplanet {
+  height: 100%;
+  width: 833px;
+  position: absolute;
+  top: 0;
+  left: 40%;
+  background: url(images/orbit/planet.png) no-repeat;
+}
+
+#orbit #orbitplanetright {
+  background: #ACF7F3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 50%;
+}
+
+#orbit #orbitlogo {
+  position: absolute;
+  width: 99px;
+  height: 157px;
+  overflow: hidden;
+  background: url(images/orbit/orbit-logo.png) no-repeat;
+  font-size: 1px;
+  text-indent: -500px;
+  top: 135px;
+  left: 19%;
+  margin-left: -50px;
+}
+
+#orbit #orbitinfo {
+  display: none;
+  color: #2B2B2B;
+  position: absolute;
+  top: 50px;
+  left: 53%;
+  width:690px;
+  padding-left: 60px;
+  margin-left: -225px;
+}
+
+#orbit #orbitinfo #orbitinfotext {
+  width: 201px;
+  float: left;
+}
+
+#orbit #orbitinfo #orbitinfotext  h3{
+  font-size: 18px;
+  font-weight: normal;
+  border-bottom: dashed 1px black;
+  padding:50px 0 20px;
+  margin-bottom:35px;
+}
+
+#orbit #orbitinfo #orbitinfotext  p{
+}
+
+#orbit #orbitinfo #orbitinfoimg {
+  float: right;
+  height: 330px;
+  width: 390px;
+  overflow: hidden;
+}
+
+/* ---- */
+
+
+
+#pulsus {
+  height: 366px;
+  width: 100%;
+  background: url(images/pulsus/bg.png) #EAEAE5 center center no-repeat;
+}
+
+#pulsus #emitter {
+}
+
+#pulsus #pulsuslogo {
+  width: 210px;
+  height: 54px;
+  background: url(images/pulsus/logo.png) no-repeat;
+  overflow: hidden;
+  text-indent: -300px;
+  position: absolute;
+  top: 160px;
+  left: 70%;
+  margin-left: -105px;
+  z-index: 50;
+}
+
+#pulsus #emitter {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 155px;
+  left: 20%;
+  background: url(images/pulsus/emitter.png) no-repeat;
+  margin-left:-32px;
+}
+
+#pulsus #pulsusinfo {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 13%;
+}
+
+#pulsus #pulsusinfo #pulsusimgv {
+  position: absolute;
+  top: 0;
+  left: 195px;
+}
+
+#pulsus #pulsusinfo #pulsusimgh {
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+
+#pulsus #particles {
+  position: absolute;
+  top: 183px;
+  left: 20%;
+  overflow: visible;
+}
+
+#pulsus #particles div {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin-left: -6px;
+  background: url(images/pulsus/particle.png) no-repeat 0px 0px;
+}
+
+#pulsus #particles div.pt1 {
+  background-position: -14px 0;
+}
+
+#pulsus #particles div.pt2 {
+  background-position: -28px 0;
+}
+
+/* ---- */
+
+#plong {
+  height: 350px;
+  width: 100%;
+  background: #DFF1F2;
+}
+
+#plong #plonginfo {
+  position: absolute;
+  top: 237px;
+  left: 7%;
+  margin-left: -158;
+  width: 400px;
+}
+
+#plong #plonginfo #plonglogo {
+  width: 317px;
+  height: 55px;
+  background: url(images/plong/title.png) no-repeat;
+  overflow: hidden;
+  text-indent: -300px;
+  margin-bottom: 30px;
+}
+
+#plong #plonginfo div {
+  display: none;
+  color: #00A5BA;
+  font-family: Verdana,sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0 0 0 30px;
+}
+
+#plong #scoreboard {
+  position: absolute;
+  background: url(images/plong/scoreboard.png) no-repeat;
+  width: 53px;
+  height: 51px;
+  top: 15px;
+  right: 13px;
+}
+
+#plong #plongplayers {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 350px;
+  right: 60px;
+}
+
+#plong #plongp1 {
+  position: absolute;
+  background: url(images/plong/player1.png) no-repeat;
+  width: 75px;
+  height: 21px;
+  margin-left: -37px;
+  top: 314px;
+  left: 80%;
+}
+
+#plong #plongp2 {
+  position: absolute;
+  background: url(images/plong/player2.png) no-repeat;
+  width: 75px;
+  height: 21px;
+  margin-left: -37px;
+  top: 314px;
+  left: 30%;
+}
+
+#plong #plongball {
+  position: absolute;
+  background: url(images/plong/ball.png) no-repeat;
+  width: 18px;
+  height: 18px;
+  margin-left: -9px;
+  top: 240px;
+  left: 30%;
+}
+
+#plong .plongobstacle {
+  position: absolute;
+  background: url(images/plong/obstacle.png) no-repeat;
+  width: 26px;
+  height: 26px;
+  margin-left: -13px;
+  top: 50%;
+  left: 50%;
+}
